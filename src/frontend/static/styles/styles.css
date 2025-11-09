@@ -4,6 +4,7 @@
     --bg-colour: #161319;
     --text-colour: #f7ebff;
     --text-colour-dark: #736b78;
+    --link-colour: #00ffff;
     --font-family: 'Roboto Mono', monospace;
 }
 
@@ -36,8 +37,14 @@ body {
 
 a {
     font-family: var(--font-family);
-    color: aqua;
+    color: var(--link-colour);
     text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: var(--text-colour);
+    text-decoration: underline;
 }
 
 @keyframes fadeIn {
